@@ -1,4 +1,4 @@
-# Meu Projeto
+# Mario Pulante - Estilo Dino jump
 
 Este é o meu projeto. Aqui estão alguns detalhes sobre ele:
 

@@ -7,7 +7,6 @@
 
 // Codigo Desenvolvido por Laisson Bruno - Inspirado em videos e estudos pessoais 
 
-Este código é usado para criar um jogo de plataforma simples. Ele contém uma função chamada jump que adiciona a classe jump ao elemento mario quando o usuário pressiona uma tecla. O loop é um intervalo que verifica se o personagem mario está colidindo com o pipe e, se sim, altera a imagem do personagem para game-over e interrompe o loop. Por fim, ele adiciona um event listener à tecla pressionada para executar a função jump.
 
 
 const mario = document.querySelector('.mario');

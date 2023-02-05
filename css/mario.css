@@ -1,0 +1,98 @@
+/* Este código é um exemplo de CSS que define o estilo de um jogo. O primeiro bloco de código define algumas propriedades básicas para todos os elementos da página, como a margem, o espaçamento e a caixa de dimensionamento.
+
+O segundo bloco de código define as propriedades do elemento .game-board, que é o tabuleiro do jogo. Ele tem uma largura de 100%, uma altura de 500px, uma borda inferior de 15px sólida e uma margem centralizada. Além disso, tem um fundo gradiente linear.
+
+O terceiro bloco define as propriedades do elemento .pipe, que é usado para representar os canos no jogo. Ele tem uma posição absoluta, uma largura de 80px e uma animação chamada pipe-animation que dura 1,5 segundos e é executada em loop infinito.
+
+O quarto bloco define as propriedades do elemento .mario, que é usado para representar o personagem principal no jogo. Ele tem uma largura de 150px e também tem uma posição absoluta na parte inferior da página. Além disso, ele possui uma animação chamada jump que dura 500ms e usa a função ease-out para suavizar a transição entre os quadros-chave da animação.
+
+O quinto bloco define as propriedades do elemento .clouds, que é usado para representar nuvens no jogo. Ele tem uma posição absoluta na parte superior da página e também possui uma animação chamada clouds-animation que dura 20 segundos e é executada em loop infinito. 
+
+Por último, os últimos três blocos definem as três animações usadas no jogo: pipe-animation, jump e clouds-animation. A pipe-animation move o cano da direita para a esquerda em um loop infinito; a jump move o personagem principal para cima e para baixo; e a clouds-animation move as nuvens da direita para a esquerda em um loop infinito. */
+
+/* Codigo Desenvolvido por Laisson Bruno - Inspirado em videos e estudos pessoais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;  
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    } 
+}
+
+@keyframes jump {
+    
+    0% {
+        bottom: 0;
+    }
+
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
